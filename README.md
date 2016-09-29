@@ -1,6 +1,6 @@
 # The `mathhw` class
-![release](https://img.shields.io/github/release/awmottaz/mathhw.svg?maxAge=2592000)
-![license](https://img.shields.io/github/license/awmottaz/mathhw.svg?maxAge=2592000)
+[![release](https://img.shields.io/github/release/awmottaz/mathhw.svg?style=flat-square)](https://github.com/awmottaz/mathhw)
+[![license](https://img.shields.io/github/license/awmottaz/mathhw.svg?style=flat-square)](https://github.com/awmottaz/mathhw/blob/master/LICENSE)
 
 ## Summary
 
