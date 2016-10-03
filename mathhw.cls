@@ -6,7 +6,7 @@
 %
 %% Initialization
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mathhw}[2016/09/27 v0.06 Math Homework Document Class]
+\ProvidesClass{mathhw}[2016/10/03 v0.07 Math Homework Document Class]
 %
 %% Load the article class and pull in the packages
 \LoadClass[letterpaper]{article}
@@ -123,6 +123,10 @@
 	numbersep = 5pt,
 	frame = single
 }
+\setlist[enumerate,1]{leftmargin=0pt}
+\setlist[enumerate,2]{leftmargin=2em}
+\setlist[enumerate,3]{leftmargin=4em}
+\setlist[enumerate,4]{leftmargin=6em}
 %% Customizations of behavior
 % Footnote symbols
 \makeatletter%
@@ -138,10 +142,10 @@
 		\or
 			\star
 		\else
-			\@ctrerr  
+			\@ctrerr
 		\fi
-	}%   
-}   
+	}%
+}
 \makeatother%
 \newalphalph{\myfnsymbolmult}[mult]{\myfnsymbolsingle}{}%
 \renewcommand*{\thefootnote}{%
