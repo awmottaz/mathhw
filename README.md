@@ -14,5 +14,8 @@ Comprehensive instructions on using this class file can be found in the [wiki](h
 
 ## Release notes
 
+- **v0.07** (Oct. 3, 2016)
+    - Customized the indentation scheme for the `enumerate` environment.
+
 - **v0.06** (Sept. 27, 2016)
     - Added the `titlesec` package
