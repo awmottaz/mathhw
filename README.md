@@ -4,7 +4,7 @@
 
 ## Summary
 
-The Homework document class, `mathhw.cls`, is designed with the graduate student in mind. LaTeX has a sharp learning curve, and although I believe any serious mathematicians today must develop a working knowledge of LaTeX, I also believe it should be easy for someone to get up and running creating beautifully typeset homework. 
+The Homework document class, `mathhw.cls`, is designed with the graduate student in mind. LaTeX has a sharp learning curve, and although I believe any serious mathematicians today must develop a working knowledge of LaTeX, I also believe it should be easy for someone to get up and running creating beautifully typeset homework.
 
 This document class provides a comprehensive collection of mathematics packages and macros. It also applies the best practices regarding typography (see [here](http://tex.stackexchange.com/questions/71172/why-are-default-latex-margins-so-big) for some discussion on the matter). There are many other features, tweaks, and design choices contained within to help make this document class as useful and user-friendly as possible. Click the links to the right for more information.
 
@@ -14,8 +14,11 @@ Comprehensive instructions on using this class file can be found in the [wiki](h
 
 ## Release notes
 
+- **v0.08** (Oct. 6, 2016)
+	- Customized section headings
+
 - **v0.07** (Oct. 3, 2016)
-    - Customized the indentation scheme for the `enumerate` environment.
+	- Customized the indentation scheme for the `enumerate` environment.
 
 - **v0.06** (Sept. 27, 2016)
-    - Added the `titlesec` package
+	- Added the `titlesec` package

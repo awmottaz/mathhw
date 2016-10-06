@@ -6,7 +6,7 @@
 %
 %% Initialization
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mathhw}[2016/10/03 v0.07 Math Homework Document Class]
+\ProvidesClass{mathhw}[2016/10/06 v0.08 Math Homework Document Class]
 %
 %% Load the article class and pull in the packages
 \LoadClass[letterpaper]{article}
@@ -127,6 +127,7 @@
 \setlist[enumerate,2]{leftmargin=2em}
 \setlist[enumerate,3]{leftmargin=4em}
 \setlist[enumerate,4]{leftmargin=6em}
+\titleformat*{\section}{\scshape\large\filcenter}
 %% Customizations of behavior
 % Footnote symbols
 \makeatletter%
