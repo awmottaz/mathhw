@@ -14,6 +14,9 @@ Comprehensive instructions on using this class file can be found in the [wiki](h
 
 ## Release notes
 
+- **v0.09** (Oct. 10, 2016)
+	- Fixed bug: class option `fdefn` throws errors for an undefined environment.
+
 - **v0.08** (Oct. 6, 2016)
 	- Customized section headings
 

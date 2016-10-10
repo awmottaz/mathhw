@@ -4,11 +4,15 @@
 %
 %                          http://www.latex-project.org/lppl.txt
 %
-%% Initialization
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%         INITIALIZATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mathhw}[2016/10/06 v0.08 Math Homework Document Class]
+\ProvidesClass{mathhw}[2016/10/10 v0.09 Math Homework Document Class]
 %
-%% Load the article class and pull in the packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%         LOAD CLASS AND PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \LoadClass[letterpaper]{article}
 \RequirePackage{layout}
 \RequirePackage{geometry}
@@ -52,48 +56,9 @@
 \RequirePackage{titlesec}
 %\RequirePackage[outputdir=build]{minted}
 %
-%% Declare class options
-\DeclareOption{fdefn}{ % put frames around definitions
-	\let\olddefn\defn
-	\let\oldenddefn\enddefn
-	\renewenvironment{defn}{\begin{framed} \olddefn}{\oldenddefn \end{framed}}
-}
-\DeclareOption{fthm}{ % put frames around theorems
-	\let\oldthm\thm
-	\let\oldendthm\endthm
-	\renewenvironment{thm}{\begin{framed} \oldthm}{\oldendthm \end{framed}}
-	\let\oldlem\lem
-	\let\oldendlem\endlem
-	\renewenvironment{lem}{\begin{framed} \oldlem}{\oldendlem \end{framed}}
-	\let\oldprop\prop
-	\let\oldendprop\endprop
-	\renewenvironment{prop}{\begin{framed} \oldprop}{\oldendprop \end{framed}}
-	\let\oldcor\cor
-	\let\oldendcor\endcor
-	\renewenvironment{cor}{\begin{framed} \oldcor}{\oldendcor \end{framed}}
-}
-\DeclareOption{fnthm}{ % put frames around enumerated theorems
-	\let\oldnthm\nthm
-	\let\oldendnthm\endnthm
-	\renewenvironment{nthm}{\begin{framed} \oldnthm}{\oldendnthm \end{framed}}
-	\let\oldnlem\nlem
-	\let\oldendnlem\endnlem
-	\renewenvironment{nlem}{\begin{framed} \oldnlem}{\oldendnlem \end{framed}}
-	\let\oldnprop\nprop
-	\let\oldendnprop\endnprop
-	\renewenvironment{nprop}{\begin{framed} \oldnprop}{\oldendnprop \end{framed}}
-	\let\oldncor\ncor
-	\let\oldendncor\endncor
-	\renewenvironment{ncor}{\begin{framed} \oldncor}{\oldendncor \end{framed}}
-}
-\DeclareOption{darktheme}{ % inverts page colors
-	\pagecolor[rgb]{0.1,0.1,0.1}
-	\color[rgb]{0.95,0.95,0.95}
-}
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
-\ProcessOptions\relax
-%
-%% Settings for packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%         PACKAGE SETTINGS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \geometry{
 	headheight = 1.3em,
 	headsep = 1.3em,
@@ -128,7 +93,9 @@
 \setlist[enumerate,3]{leftmargin=4em}
 \setlist[enumerate,4]{leftmargin=6em}
 \titleformat*{\section}{\scshape\large\filcenter}
-%% Customizations of behavior
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%         CUSTOM BEHAVIOR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Footnote symbols
 \makeatletter%
 \newcommand*{\myfnsymbolsingle}[1]{%
@@ -340,3 +307,46 @@
 	\node[shape=ellipse,draw,inner sep=1pt] (char) {#1};}}
 % Margin paragraphs
 \newcommand{\mpar}[1]{\marginpar{\footnotesize#1}}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%         CLASS OPTIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareOption{fdefn}{ % put frames around definitions
+	\let\olddefn\defn
+	\let\oldenddefn\enddefn
+	\renewenvironment{defn}{\begin{framed} \olddefn}{\oldenddefn \end{framed}}
+}
+\DeclareOption{fthm}{ % put frames around theorems
+	\let\oldthm\thm
+	\let\oldendthm\endthm
+	\renewenvironment{thm}{\begin{framed} \oldthm}{\oldendthm \end{framed}}
+	\let\oldlem\lem
+	\let\oldendlem\endlem
+	\renewenvironment{lem}{\begin{framed} \oldlem}{\oldendlem \end{framed}}
+	\let\oldprop\prop
+	\let\oldendprop\endprop
+	\renewenvironment{prop}{\begin{framed} \oldprop}{\oldendprop \end{framed}}
+	\let\oldcor\cor
+	\let\oldendcor\endcor
+	\renewenvironment{cor}{\begin{framed} \oldcor}{\oldendcor \end{framed}}
+}
+\DeclareOption{fnthm}{ % put frames around enumerated theorems
+	\let\oldnthm\nthm
+	\let\oldendnthm\endnthm
+	\renewenvironment{nthm}{\begin{framed} \oldnthm}{\oldendnthm \end{framed}}
+	\let\oldnlem\nlem
+	\let\oldendnlem\endnlem
+	\renewenvironment{nlem}{\begin{framed} \oldnlem}{\oldendnlem \end{framed}}
+	\let\oldnprop\nprop
+	\let\oldendnprop\endnprop
+	\renewenvironment{nprop}{\begin{framed} \oldnprop}{\oldendnprop \end{framed}}
+	\let\oldncor\ncor
+	\let\oldendncor\endncor
+	\renewenvironment{ncor}{\begin{framed} \oldncor}{\oldendncor \end{framed}}
+}
+\DeclareOption{darktheme}{ % inverts page colors
+	\pagecolor[rgb]{0.1,0.1,0.1}
+	\color[rgb]{0.95,0.95,0.95}
+}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+\ProcessOptions\relax
