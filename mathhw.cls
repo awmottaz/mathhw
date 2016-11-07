@@ -8,7 +8,7 @@
 %         INITIALIZATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mathhw}[2016/10/10 v0.09 Math Homework Document Class]
+\ProvidesClass{mathhw}[2016/11/07 v0.10 Math Homework Document Class]
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %         LOAD CLASS AND PACKAGES
@@ -88,10 +88,10 @@
 	numbersep = 5pt,
 	frame = single
 }
-\setlist[enumerate,1]{leftmargin=0pt}
-\setlist[enumerate,2]{leftmargin=2em}
-\setlist[enumerate,3]{leftmargin=4em}
-\setlist[enumerate,4]{leftmargin=6em}
+\setlist[enumerate,1]{leftmargin=1.5em}
+\setlist[enumerate,2]{leftmargin=1em}
+\setlist[enumerate,3]{leftmargin=1em}
+\setlist[enumerate,4]{leftmargin=1em}
 \titleformat*{\section}{\scshape\large\filcenter}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %         CUSTOM BEHAVIOR
